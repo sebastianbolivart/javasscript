@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="css/micss.css">
 <script>
 
+  //var articulos = ['Zapatillas', 'Camiseta', 'Pantalon', 'Calcetines'];
+  var articulos = new Array('Zapatillas', 'Camiseta', 'Pantalon', 'Calcetines');
 	
 </script>
 </head>
@@ -13,20 +15,42 @@
 <body>
 <div class="contenedor">
   <div class="header">
-    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
-     </p>
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas</p>
   </div>
   <div class="contenido">
     <div class="principal">
       <h1>Manejando Arrays</h1>
-      <script>
-	  
+        <script>
 
-		
-		
-		
-		
-	  </script>
+          document.write('<p> El primer articulo es <strong>' + articulos[0] + '</strong></p>');
+          document.write('<p> El ulimo articulo es <strong>' + articulos[articulos.length - 1] + '</strong></p>');
+
+          articulos.unshift("Balón");
+
+          document.write('<p> Casi nos olvidamos!!! Agregamos el elemento: <strong>' + articulos[0] + '</strong></p>');
+
+          articulos.push(prompt("Introduce el articulo", 'Vacio'));
+
+          document.write("<p>Agregemos un elemento mas al final: " + articulos[articulos.length - 1] + "</p>");
+
+          document.write('<p> El primer articulo es <strong>' + articulos[0] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[1] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[2] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[3] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[4] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[5] + '</strong></p>');
+
+          articulos.shift(); //elimina el primer elemento del array
+          document.write('<p> El primer articulo es <strong>' + articulos[0] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[1] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[2] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[3] + '</strong></p>');
+          document.write('<p> El primer articulo es <strong>' + articulos[4] + '</strong></p>');
+
+
+
+
+        </script>
      </div>
   </div>
   
