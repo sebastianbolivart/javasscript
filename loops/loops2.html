@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#contenedor{
+			width: 25%;
+			background-color: #FFC;
+			margin: auto;
+			padding: 15px;
+		}
+	</style>
+	<script>
+		var nombre, edad, poblacion;
+
+		nombre = prompt("introduce tu nombre por favor");
+		edad = prompt("introduce tu edad por favor");
+
+		while (edad <= 0 || edad > 105) {
+			edad = prompt("introduce tu edad por favor");
+		}
+
+		poblacion = prompt("introduce tu población por favor");
+
+	</script>
+</head>
+<body>
+	<div id="contenedor">
+		<p>Nombre:
+			<script>document.write(nombre);</script>
+		</p>
+		<p>Edad:
+		<script>document.write(edad);</script>
+		</p>
+		<p>población:
+		<script>document.write(poblacion);</script>
+		</p>
+	</div>
+</body>
+</html>
